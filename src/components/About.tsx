@@ -54,7 +54,7 @@ const About = () => {
           <span className={styles.price}>$16.48</span>
         </div>
         <div className={styles.imageContainer}>
-          <img src="public/dax.jpg" alt="Kitchen Utensils" className={styles.utensilsImage} />
+          <img src="/dax.jpg" alt="Kitchen Utensils" className={styles.utensilsImage} />
         </div>
         <button className={styles.ctaButton}>ADD YOUR CALL TO ACTION</button>
       </div>
