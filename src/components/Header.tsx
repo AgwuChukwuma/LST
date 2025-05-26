@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import styles from '../styles/Header.module.css';
+import { useState } from 'react'
+import styles from '../styles/Header.module.css'
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
