@@ -3,7 +3,7 @@ import { FaStar } from 'react-icons/fa';
 
 const About = () => {
   const testimonial = {
-    profileImage: 'public/51b41f20db95c385c8df9dbc1cafee5ea93687e3.png',
+    profileImage: '/51b41f20db95c385c8df9dbc1cafee5ea93687e3.png',
     rating: 5,
     review: 'Iate helps you see how many more days you need to work to reach your financial goal.',
     author: 'Regina Miles',
@@ -11,15 +11,15 @@ const About = () => {
   };
 
   const galleryImages = [
-    'public/00879f3ee04a28c786575d51ff2f5509decb573e.jpg',
-    'public/fe81f5a662540563739b657086248ad0a382191d.jpg',
-    'public/78ddce2cecd29b2f7fd0c822f75470879b361df4.jpg',
-    'public/5aad40cccc61574568d928d6a3147584c8aeee3f.jpg',
-    'public/8cfa532a7a9b5738525b19f05184c6b37f1fff13.jpg',
-    'public/29c0fceb11870fcea081912ee81e40aa61518ea2.jpg',
-    'public/780f07e11d7abbd5dfd2c9fe2a7b49e26a96ccdd.jpg',
-    'public/9cf26ace499c6af2de3f0d3ed8c1a042e945720a.jpg',
-    'public/5249b308b86b7010cacb5bed89efef6c365df384.jpg',
+    '/00879f3ee04a28c786575d51ff2f5509decb573e.jpg',
+    '/fe81f5a662540563739b657086248ad0a382191d.jpg',
+    '/78ddce2cecd29b2f7fd0c822f75470879b361df4.jpg',
+    '/5aad40cccc61574568d928d6a3147584c8aeee3f.jpg',
+    '/8cfa532a7a9b5738525b19f05184c6b37f1fff13.jpg',
+    '/29c0fceb11870fcea081912ee81e40aa61518ea2.jpg',
+    '/780f07e11d7abbd5dfd2c9fe2a7b49e26a96ccdd.jpg',
+    '/9cf26ace499c6af2de3f0d3ed8c1a042e945720a.jpg',
+    '/5249b308b86b7010cacb5bed89efef6c365df384.jpg',
   ];
 
   return (

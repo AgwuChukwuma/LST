@@ -112,18 +112,18 @@ const App = () => {
       <main className={styles.productGridLayout}>
         <div className={styles.leftLarge}>
           <div className={styles.productCard}>
-            <img src="/public/card-item.png" alt="Plate" />
+            <img src="/card-item.png" alt="Plate" />
           </div>
         </div>
         <div className={styles.rightSmall}>
           <div className={styles.topCard}>
             <div className={styles.productCard}>
-              <img src="/public/col-md-4.png" alt="Pot with Plant" />
+              <img src="/col-md-4.png" alt="Pot with Plant" />
             </div>
           </div>
           <div className={styles.bottomRow}>
             <div className={styles.productCard}>
-              <img src="/public/015039a56ac33f2b1eeab39210c46ab15b36b550.jpg" alt="Lamp" />
+              <img src="/015039a56ac33f2b1eeab39210c46ab15b36b550.jpg" alt="Lamp" />
               <div className={styles.productInfo}>
                 <span className={styles.itemCount}>5 Items</span>
                 <h2>FURNITURE</h2>
@@ -131,7 +131,7 @@ const App = () => {
               </div>
             </div>
             <div className={styles.productCard}>
-              <img src="/public/card-item (1).png" alt="Ceramics" />
+              <img src="/card-item (1).png" alt="Ceramics" />
             </div>
           </div>
         </div>

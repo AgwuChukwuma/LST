@@ -4,7 +4,7 @@ const FeaturedPosts = () => {
   const posts = [
     {
       id: 1,
-      image: 'public/1c5391d2189bc18c1b18efcbdf935a7b58775de7.jpg',
+      image: '/1c5391d2189bc18c1b18efcbdf935a7b58775de7.jpg',
       title: "Loudest à la Madison #1 (L'Integral)",
       description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
       date: '22 April 2021',
@@ -13,7 +13,7 @@ const FeaturedPosts = () => {
     },
     {
       id: 2,
-      image: 'public/f9f3a7c3d345cb2add9d6095dc3dd76a31853c57.jpg',
+      image: '/f9f3a7c3d345cb2add9d6095dc3dd76a31853c57.jpg',
       title: "Loudest à la Madison #1 (L'Integral)",
       description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
       date: '22 April 2021',
@@ -22,7 +22,7 @@ const FeaturedPosts = () => {
     },
     {
       id: 3,
-      image: 'public/3016ca710ac5895ef5c1226ea345dafd1986d3f7.jpg',
+      image: '/3016ca710ac5895ef5c1226ea345dafd1986d3f7.jpg',
       title: "Loudest à la Madison #1 (L'Integral)",
       description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
       date: '22 April 2021',
