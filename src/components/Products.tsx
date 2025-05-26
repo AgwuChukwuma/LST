@@ -2,6 +2,15 @@ import { useState } from 'react';
 import styles from '../styles/products.module.css';
 import { useGetProductsQuery } from '../services/productsAPI';
 
+interface Product {
+  id: number;
+  title: string;
+  brand: string;
+  price: number;
+  discountPercentage: number;
+  thumbnail: string;
+}
+
 const Products = () => {
   const [limit] = useState(10);
   const [skip, setSkip] = useState(0);
@@ -25,7 +34,7 @@ const Products = () => {
         {error && <p>Error fetching products</p>}
 
         <div className={styles.productGrid}>
-          {products.map((product) => (
+          {products.map((product: Product) => (
             <div key={product.id} className={styles.productCards}>
               <img src={product.thumbnail} alt={product.title} />
               <div className={styles.productInf}>
