@@ -1,0 +1,278 @@
+.about {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+
+.testimonialContent {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;     
+}
+
+.testimonialContent h1 {
+  font-size: 28px;
+  color: #1A0DAB;
+  margin-bottom: 20px;
+}
+
+.profileImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+  justify-content: center; 
+}
+
+.review {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-size: 14px;
+  color: #666;
+}
+
+.imageGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 600px;
+}
+
+.galleryImage {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.problemsSection {
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  background: url('public/background-texture.jpg') repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  border-radius: 8px;
+  margin-top: 60px;
+}
+
+.problemsContent {
+  z-index: 1;
+  max-width: 600px;
+}
+
+.problemsContent h2 {
+  font-size: 14px;
+  color: #1DA1F2;
+  margin-bottom: 10px;
+}
+
+.problemsContent h1 {
+  font-size: 32px;
+  color: #252B42;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.problemsContent p {
+  font-size: 16px;
+  color: #737373;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 24px;
+  color: #23856D;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.imageContainer {
+  position: absolute;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.utensilsImage {
+  width: 1710px;
+  margin-top: auto;
+  height: 600px;
+  object-fit: cover;
+}
+
+.ctaButton {
+  padding: 10px 20px;
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #1696d2;
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 600px;
+  }
+
+  .problemsSection {
+    padding: 20px;
+  }
+
+  .problemsContent h1 {
+    font-size: 24px;
+  }
+
+  .utensilsImage {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 20px 10px;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .testimonialContent {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .testimonialContent h1 {
+    font-size: 22px;
+  }
+
+  .profileImage {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+  }
+
+  .rating {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .review {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .author {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .role {
+    font-size: 12px;
+  }
+
+  .imageGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 600px;
+  }
+
+  .galleryImage {
+    height: 100px;
+  }
+
+  .problemsSection {
+    padding: 20px 10px;
+    min-height: auto;
+  }
+
+  .problemsContent {
+    max-width: 100%;
+  }
+
+  .problemsContent h2 {
+    font-size: 12px;
+  }
+
+  .problemsContent h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .problemsContent p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .price {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .imageContainer {
+    margin-bottom: 15px;
+  }
+
+  .utensilsImage {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .ctaButton {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 0;
+  }
+}

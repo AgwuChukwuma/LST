@@ -1,0 +1,87 @@
+.bestServices {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bestServices h2 {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.bestServices h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bestServices p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.servicesGrid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.serviceCard {
+  max-width: 250px;
+  text-align: center;
+}
+
+.serviceIcon {
+  margin-bottom: 20px;
+}
+
+.serviceCard h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.serviceCard p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .bestServices h1 {
+    font-size: 24px;
+  }
+
+  .serviceCard h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bestServices {
+    padding: 30px 10px;
+  }
+
+  .bestServices h1 {
+    font-size: 20px;
+  }
+
+  .bestServices p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .servicesGrid {
+    flex-direction: column; 
+    gap: 20px;
+    align-items: center;
+  }
+
+  .serviceCard {
+    max-width: 100%; 
+  }
+}

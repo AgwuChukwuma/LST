@@ -1,0 +1,252 @@
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #23856D;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.userActions a.loginLink {
+  font-weight: bold;
+}
+
+.contactInfo span {
+  margin-right: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.contactInfo svg {
+  margin-right: 5px;
+}
+
+.socialLinks span {
+  margin-right: 10px;
+}
+
+.promo {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2e2e2e;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav .dropdown {
+  font-size: 10px;
+}
+
+.userActions {
+  display: flex;
+  align-items: center;
+}
+
+.userActions a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #23A6F0;
+  font-weight: 500;
+}
+
+.badge {
+  color: #23A6F0;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 0 6px;
+  margin-left: 4px;
+}
+
+.productGridLayout {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leftLarge .productCard {
+  position: relative;
+  height: 100%;
+}
+
+.rightSmall {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.topCard {
+  flex: 1;
+}
+
+.bottomRow {
+  display: flex;
+  gap: 20px;
+}
+
+.productCard {
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.productCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: inline-flex;
+}
+
+.productInfo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #2e2e2e;
+}
+
+.itemCount {
+  color: #00c4b4;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.productInfo h2 {
+  font-size: 20px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.productInfo a {
+  color: #2e2e2e;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .topBar {
+    display: none;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .nav.navOpen {
+    display: flex;
+  }
+
+  .nav a {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .loginLink {
+    display: none;
+  }
+
+  .wishlistLink {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 1000;
+  }
+
+  .userActions {
+    margin-left: auto;
+  }
+
+  .productGridLayout {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .leftLarge, .rightSmall, .topCard, .bottomRow {
+    display: block;
+  }
+
+  .bottomRow {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .userActions a {
+    margin-left: 5px;
+  }
+
+  .userActions svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .productInfo h2 {
+    font-size: 18px;
+  }
+
+  .productInfo a, .itemCount {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,155 @@
+.footer {
+  background-color: #FAFAFA;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+hr {
+  width: 80%;
+  margin-left: 12.5%;
+  margin-right: auto;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #252B42;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcons a {
+  text-decoration: none;
+}
+
+.footerColumns {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  min-width: 150px;
+}
+
+.column h3 {
+  font-size: 16px;
+  color: #252B42;
+  margin-bottom: 15px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 10px;
+}
+
+.column ul li a {
+  text-decoration: none;
+  color: #737373;
+  font-size: 14px;
+}
+
+.column ul li a:hover {
+  color: #2d60c0;
+}
+
+.subscriptionForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.subscriptionForm input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.subscriptionForm button {
+  padding: 8px 16px;
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscriptionForm button:hover {
+  background-color: #1696d2;
+}
+
+.formNote {
+  font-size: 12px;
+  color: #888;
+}
+
+.footerBottom {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footerBottom p {
+  font-size: 14px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+  }
+  .logo{
+    align-self: baseline;
+  }
+  .socialIcons{
+    align-self: baseline;
+  }
+  hr{
+    display: none;
+  }
+  .footerColumns {
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+
+  .column {
+    margin-bottom: 20px;
+  }
+
+  .subscriptionForm {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscriptionForm input,
+  .subscriptionForm button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

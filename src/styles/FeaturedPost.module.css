@@ -1,0 +1,162 @@
+.featuredPosts {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featuredPosts h2 {
+  font-size: 14px;
+  color: #1DA1F2;
+  margin-bottom: 10px;
+}
+
+.featuredPosts h1 {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.postCard {
+  position: relative;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.newLabel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #FF4136;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.postImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.postContent {
+  padding: 15px;
+  text-align: left;
+}
+
+.source {
+  color: #1DA1F2;
+  font-size: 12px;
+}
+
+.trending {
+  color: #888;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.new {
+  color: #888;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.postContent h3 {
+  font-weight: 100;
+  font-family: monospace;
+  font-size: 18px;
+  color: #252B42;
+  margin: 10px 0 5px;
+}
+
+.postContent p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 10px;
+}
+
+.postMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.postMeta span {
+  display: flex;
+  align-items: center;
+}
+
+.postMeta span::before {
+  content: '';
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.learnMore {
+  color: #737373;
+  font-size: 14px;
+  text-decoration: none;
+}
+.learnMore span {
+  position: absolute;
+  margin-left: 7px;
+}
+
+.learnMore:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .featuredPosts h1 {
+    font-size: 24px;
+  }
+
+  .postContent h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .featuredPosts {
+    padding: 30px 10px;
+  }
+
+  .featuredPosts h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .postsGrid {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+
+  .postImage {
+    height: auto;    
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .postContent h3 {
+    font-size: 16px;
+  }
+
+  .postContent p {
+    font-size: 13px;
+  }
+
+  .learnMore {
+    font-size: 13px;
+  }
+}
